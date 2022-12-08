@@ -65,36 +65,35 @@ headerBurger.addEventListener("click", function () {
   document.querySelector(".body").classList.toggle("lock");
 });
 
-
-$(function() {
-  $(window).scroll(function() {
+$(function () {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 20) {
-      $('.navigation').addClass('fixed');
-      $('header').css({
+      $(".navigation").addClass("fixed");
+      $("header").css({
         "border-bottom": "none",
         // "width": "744px"
-        "padding": "0px 0"
+        padding: "0px 0",
       });
-
     } else {
-      $('.navigation').removeClass('fixed');
-      $('header').css({
-        "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-        "padding": "0px 0"
+      $(".navigation").removeClass("fixed");
+      $("header").css({
+        "border-bottom": "none",
+        padding: "0px 0",
       });
     }
   });
 });
 
-$(function(){
+$(function () {
   // bind change event to select
-  $('#language').on('change', function () {
-      var url = $(this).val(); // get selected value
-      if (url) { // require a URL
-          window.location = url; // redirect
-      }
-      return false;
+  $("#language").on("change", function () {
+    var url = $(this).val(); // get selected value
+    if (url) {
+      // require a URL
+      window.location = url; // redirect
+    }
+    return false;
   });
 });

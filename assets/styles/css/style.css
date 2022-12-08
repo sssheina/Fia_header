@@ -840,6 +840,10 @@ a {
   max-width: 100px;
 }
 
+.main__card-l {
+  width: 126px;
+}
+
 .main__card-text {
   display: flex;
   flex-direction: column;
@@ -870,7 +874,12 @@ a {
   font-size: 10px;
   line-height: 135%;
   color: #3919af;
-  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.main__card-link:hover {
+  transition: 300ms;
+  color: #ffe500;
 }
 
 @media (max-width: 456px) {
@@ -1275,7 +1284,7 @@ a {
 }
 
 .btn-up::before {
-  content: url("/assets/images/arrow-up.png");
+  content: url("/assets/images/arrow-up.svg");
 }
 
 .btn-up_hide {

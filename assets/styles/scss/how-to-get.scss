@@ -10,7 +10,7 @@
 .main__how-to-get-text {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  align-items: center;
+  align-items: start
 }
 
 .main__how-to-get-card-title {
@@ -18,7 +18,11 @@
   font-size: 14px;
   line-height: 135%;
   color: #3919af;
-  margin: 0;
+  
+}
+
+.down {
+  margin-top: 28px;
 }
 .main__how-to-get-card-text {
   text-align: justify;

@@ -18,6 +18,9 @@
   max-width: 112px;
 }
 .main__team-info {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   max-width: 324px;
 }
 .main__team-title {

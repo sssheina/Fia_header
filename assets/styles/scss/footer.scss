@@ -1,0 +1,62 @@
+.footer {
+  background: #3919af;
+  height: 188px;
+}
+.footer__content {
+  border: 1px solid red;
+  text-align: center;
+  max-width: 225px;
+  height: 100%;
+  // padding-top: 38px;
+  margin: 38px auto;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+}
+.footer__freepik {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+}
+
+.btn-up {
+  font-family: "Open Sans";
+  position: fixed;
+  background: #ffe500;
+  right: 1em;
+  bottom: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+}
+.btn-up:hover {
+  background-color: #ffe500;
+  transform: scale(1.1);
+}
+
+.btn-up::before {
+  content: url("/assets/images/arrow-up.png");
+}
+
+.btn-up_hide {
+  display: none;
+}
+.btn-up_hiding {
+  opacity: 0;
+  transform: translateY(100px);
+}

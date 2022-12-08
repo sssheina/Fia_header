@@ -787,7 +787,6 @@ a {
 }
 
 .main__main-content {
-  height: 355px;
   padding: 59px 0 79px 0;
 }
 
@@ -1163,6 +1162,7 @@ a {
 }
 .main__contacts {
   background: #f7f5ff;
+  height: 418px;
 }
 
 .main__contacts-title {
@@ -1189,6 +1189,15 @@ a {
   color: #3919af;
 }
 
+.main__p {
+  margin-top: 10px;
+}
+
+.email {
+  text-transform: none;
+  font-size: 14px;
+}
+
 @media (max-width: 456px) {
   .main__contacts-icons {
     column-gap: 30px;
@@ -1196,16 +1205,18 @@ a {
   }
 }
 .footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
   background: #3919af;
   height: 188px;
 }
 
 .footer__content {
-  border: 1px solid red;
   text-align: center;
   max-width: 225px;
-  height: 100%;
-  margin: 38px auto;
+  margin: 0 auto;
 }
 
 .footer__link {
@@ -1260,6 +1271,10 @@ a {
 .btn-up_hiding {
   opacity: 0;
   transform: translateY(100px);
+}
+
+.footer__freepik {
+  text-transform: none;
 }
 
 .main__button,

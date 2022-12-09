@@ -783,7 +783,7 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 583px;
+  min-height: 583px;
 }
 
 .main__main-content {
@@ -889,7 +889,7 @@ a {
 }
 .main__about-us {
   background: #3919af;
-  height: 868px;
+  min-height: 868px;
 }
 
 .main__about-us-title {
@@ -922,7 +922,7 @@ a {
   max-width: 228px;
   color: #ffe500;
   font-weight: 900;
-  font-size: 64px;
+  font-size: calc(20px + 5.9139784946vw);
   margin: 0;
   letter-spacing: 0.06em;
 }
@@ -931,7 +931,7 @@ a {
   max-width: 228px;
   color: #ffe500;
   font-weight: 300;
-  font-size: 64px;
+  font-size: calc(20px + 5.9139784946vw);
   margin: 0;
   letter-spacing: 0.06em;
 }
@@ -967,10 +967,16 @@ a {
   .main__about-grid {
     grid-template-columns: 1fr;
   }
-  .main__number,
-.main__number-text,
+  .main__number-text,
 .empty {
     display: none;
+  }
+  .main__number {
+    display: none;
+  }
+  .main__number_thin, .main__number_black {
+    display: none;
+    font-size: calc(20px + 74.8 * (100vw - 320px) / 744);
   }
   .main__about-grid:last-child {
     margin-bottom: 40px;
@@ -988,7 +994,8 @@ a {
   max-width: 510px;
   margin: 0 auto 27px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  column-gap: 15px;
 }
 
 .main__team-card:last-child {
@@ -1005,6 +1012,7 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   max-width: 324px;
+  margin: 0 auto;
 }
 
 .main__team-title {
@@ -1045,6 +1053,7 @@ a {
 .main__team-text {
     margin: 0 auto 8px;
     text-align: center;
+    width: 100%;
   }
   .main__team-icon {
     margin: 10px auto 25px;
@@ -1083,6 +1092,7 @@ a {
   font-size: 14px;
   line-height: 135%;
   color: #1e1e1e;
+  margin-bottom: 15px;
 }
 
 .main__working-text {
@@ -1128,6 +1138,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-bottom: 100px;
+  column-gap: 15px;
 }
 
 .main__how-to-get-text {
@@ -1148,17 +1159,18 @@ a {
 }
 
 .main__how-to-get-card-text {
-  text-align: justify;
   font-weight: 600;
   font-size: 13px;
   line-height: 200%;
   color: #1e1e1e;
+  margin-bottom: 15px;
+  max-width: 256px;
 }
 
 .main__how-to-get-pictures {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  row-gap: 30px;
+  gap: 30px;
 }
 
 .main__how-to-get-card-img img {
@@ -1171,8 +1183,8 @@ a {
 .main__how-to-get-card-text {
     text-align: center;
   }
-  .main__how-to-get-content {
-    row-gap: 38px;
+  .main__how-to-get-text {
+    justify-items: center;
   }
 }
 .main__contacts {
